@@ -13,12 +13,43 @@
         Contact us at: 09123456789
     </address>
     <hr>
-    <abbr title="National Aeronautics and Space Administration(NASA)"><b>NASA</b></abbr> started in 1957.
-    <p>Here is a qoute from Brainyquote</p>
+    <abbr title="National Aeronautics and Space Administration(NASA)"><mark><b>NASA</b></mark></abbr> started in 1957.
+    <p><strong>Here is a qoute from Brainyquote</strong></p>
     <blockquote cite="https://www.brainyquote.com/topics/nasa-quotes">
-    "For quite some time, women at NASA only had Scientifi backgrounds."
+    <pre>"For quite some time, <i>women</i> at NASA only had Scientific backgrounds."</pre>
     </blockquote>
-    <h1>NASA LOGO</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" width="200" height="200" alt="">
+    <h1 style="color: blue;">NASA LOGO</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" width="200" height="200" alt="The NASA LOGO">
+    <p><cite>The <mark>NASA LOGO</mark> since <del>1999</del><ins>1959!</ins></cite></p>
+    <hr>
+    <h1>LOCAL DISK</h1>
+    <label for="Local Disk C">Local Disk C</label>
+    <meter id="Local Disk C" value="2" min="0" max="10">out of 10</meter> <br>
+    <label for="Local Disk D">Local Disk D</label>
+    <meter for="Local Disk D" value="5" min="2" max="10"></meter>
+    <hr>
+    <h1>WEATHER TIME!</h1>
+    <p>Uulan <small>Bukas</small> mga hapon bandang <button onclick="ShowContent()">ShowTime</button> </button> <time datetime="2024-02-08">Mag dala ka nang payong ayokong nag kakasakit ka</time></p>
+    <template>
+        <h2><small>SHOWTIME</small></h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/It%27s_Showtime_2022_title_card.png" width="200" height="200" alt="SHOWTIME">
+    </template>
+    <script>
+        function ShowContent() {
+            let temp = document.getElementsByTagName("template")[0];
+            let clon = temp.content.cloneNode(true);
+            document.body.apprendChild(clon);
+        }
+    </script>
+    <hr>
+    <h1>ANG TULA KO</h1>
+    <p><q>Ang Buhay ay Weather Weather </q>lng  Kaya Dapat laging kumain nang <em>Gulay</em> Para Pag nag saing ung payong na <sup>maliit</sup> pag binuksan bakit ang tanong at paano.</p>
+    <hr>
+
+    <h1>OMEGA SUPER DUBA SALE</h1>
+    <p><s>Buy one take 1</s></p>
+    <p>BUY ONE TAKE 3</p><br>
+    <label for="file">Progressed Complete:</label>
+    <progress id="file" value="90" max="100">80%</progress>
 </body>
 </html>
